@@ -1,0 +1,8 @@
+<div>
+  <%= form_with(url: {action: :show_results}, multipart: true, local: true) do %>
+    <%= file_field_tag 'image', required: true %>
+    <br>
+    <br>
+    <%= submit_tag 'Upload and predict' %>
+  <% end %>
+</div>
