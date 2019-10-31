@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
-if [ -f web/tmp/pids/server.pid ]; then
-  rm web/tmp/pids/server.pid
+if [ -f tmp/pids/server.pid ]; then
+  rm tmp/pids/server.pid
 fi
 
 exec "$@"
